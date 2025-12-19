@@ -1,3 +1,7 @@
+/* ==============================
+    ROOT VARIABLES (Global Styles)
+============================== */
+
 :root {
 --primary: #28CB8B;
 --secondary: #263238;
@@ -9,10 +13,12 @@
 --main_text:#18191F;
 --brand_primary:#4CAF4F;
 --secondary-gray:#18191F;
-/* --dark: hsl(210, 10%, 33%);
---gray: hsl(201, 11%, 66%); */
 --font-main: 'Inter', sans-serif;
 }
+
+/* ==============================
+       RESET & BASE STYLES
+============================== */
 
 * {
     margin: 0;
@@ -24,6 +30,10 @@
 h1,h2,h3,h4,h5{
     font-weight: 500;
 }
+
+/* ==============================
+    HEADER / HERO SECTION
+============================== */
 
 
 .main-header{
@@ -37,6 +47,16 @@ header .my-header{
     padding:30px 120px;
     align-items: center;
     color: var(--main_text);
+}
+
+.my-header .burger-menu{
+    display: none;
+}
+
+.my-header .burger-menu span{
+    width: 18.75px;
+    height: 2px;
+    background-color: #000;
 }
 
 .my-header nav{
@@ -110,6 +130,10 @@ header .hero .graphic{
     width:fit-content;
 }
 
+/* ==============================
+    LAYOUT DIMENSIONS & FONTS
+============================== */
+
 .clients, 
 .community,
 .marketing,
@@ -148,6 +172,10 @@ footer{
     color: var(--secondary-gray);
 }
 
+/* ==============================
+       MAIN LAYOUT
+============================== */
+
 .clients .logos{
     width: 100%;
     display: flex;
@@ -161,6 +189,10 @@ footer{
     justify-content: space-between;
     gap:5%;
 }
+
+/* ==============================
+       CARD COMPONENT
+============================== */
 
 .community .groups .card{
     width: 60%;
@@ -189,6 +221,10 @@ footer{
     width: fit-content;
 }
 
+/* ==============================
+       SECTION INFO COMPONENT
+============================== */
+
 .info{
     width: 100%;
     display: flex;
@@ -216,6 +252,10 @@ footer{
     color: var(--neutral_grey);
 }
 
+/* ==============================
+       SECTION ASIDE COMPONENT
+============================== */
+
 aside {
     width: 100%;
     display: flex;
@@ -224,7 +264,6 @@ aside {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .numbers .text{
     width:50%;
@@ -282,6 +321,10 @@ aside {
     width:100%;
 }
 
+/* ==============================
+    SECTION OPINION COMPONENT
+============================== */
+
 .opinion{
     gap:20px
 }
@@ -317,6 +360,10 @@ aside {
     margin-bottom: 150px;
 }
 
+/* ==============================
+       CARD COMPONENT
+============================== */
+
 .marketing .cards{
     display: flex;
     width: 100%;
@@ -335,7 +382,6 @@ aside {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    
 }
 
 .readmore div{
@@ -356,6 +402,10 @@ aside {
     color: var(--brand_primary);
     gap: 8px;
 }
+
+/* ==============================
+       FOOTER
+============================== */
 
 footer{
     padding:0
@@ -421,14 +471,12 @@ footer .my-footer{
     display: flex;
     flex-direction: column;
     gap:24px
-
 }
 
 .my-footer .info ul{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
 }
 
 .my-footer .info ul li{
@@ -444,9 +492,7 @@ footer .my-footer{
     display: block;
     bottom: .5rem;
     left: 12.8rem;
-    
 }
-
 
 .my-footer input{
     border-radius: 8px;
@@ -457,20 +503,237 @@ footer .my-footer{
     color: rgb(255, 255, 255, 0.3);
 }
 
+ /* ==============================
+    BREAKPOINT 1: TABLET (≥ 768px)
+    ============================== */
+
+@media (max-width:768px){
+
+    h1,h2,h3,h4,h5{
+        font-weight: 400;
+    }
+
+    header .my-header{
+        justify-content: space-between;
+        padding:10px 32px;
+    }
+
+    .my-header .burger-menu{
+        width: 36px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .my-header{
+        width:80%;
+        align-items: center;
+    }
+
+    .my-header nav{
+        display: none;
+    }
+
+    button{
+        padding:4px;
+        font-size: 12px;
+    }
+
+    header .hero{
+        padding:10px 20px;
+    }
+
+    header .hero .graphic{
+        gap: 30px;
+    }
+
+    .graphic h1{
+        font-size: 22px;
+    }
+
+    .graphic p{
+        font-size: 12px;
+    }
+
+    .clients, 
+    .community,
+    .marketing,
+    footer{
+        padding: 10px 20px;
+    }
+
+    .clients header,
+    .community header,
+    .marketing header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 16px;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .clients header h1,
+    .community header h1,
+    .marketing header h1{
+        font-size: 18px;
+    }
+
+    .clients header p,
+    .community header p,
+    .marketing header p{
+        font-size: 12px;
+    }
+
+    .community .groups{
+        overflow-x: scroll;
+    }
+
+    .community .groups .card{
+        border-radius: 8px;
+        gap: 3px;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .card h3{
+        font-size: 16px;
+    }
+
+    .card p{
+        font-size: 10px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column-reverse;
+        padding:10px 30px;
+        gap: 10px;
+    }
+
+    .info .text{
+        gap: 10px;
+        width: 100%;
+    }
+
+    .info .text h2{
+        font-size: 20px;  
+    }
+
+    .info .text p{
+        font-size: 12px
+    }
+
+    aside {
+        flex-direction: column;
+        padding:20px 20px;
+    }
 
 
+    .numbers .text{
+        width:100%;
+    }
+
+    .numbers  h1{
+        font-size: 22px;
+    }
+
+    .numbers  .text p{
+        margin: 12px 0;
+        font-size: 12px;
+    }
+
+    .numbers  .counts{
+        width: 100%;
+        gap: 50px;
+    }
+
+    .counts .ciphers{
+        gap: 10px;
+    }
+
+    .numbers .counts h2{
+        font-size: 16px;
+    }
 
 
+    .opinion .text h4{
+        font-size: 16px;
+    }
 
+    .opinion .text p{
+        font-size: 12px;
+    }
 
+    .text .customers{
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .marketing{
+        margin-bottom: 150px;
+    }
 
+    .marketing .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
 
+    .marketing .cards h5{
+        font-size: 16px;
+    }
 
+    .readmore div{
+        padding: 10px;
+        width: 70%;
+        top:80%;
+    }
 
+    footer{
+        padding:0
+    }
 
+    footer .demo{
+        gap:22px;
+    }
 
+    .demo h1{
+        font-size: 24px;
+    }
 
+    footer .my-footer{
+        padding:10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:30px;
+    }
 
+    .my-footer .company{
+        gap:20px;
+    }
 
+    .my-footer .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px
+    }
 
+    .my-footer .info h4{
+        font-size: 18px;
+    }
+
+    .my-footer .info article{
+        gap:20px
+    }
+
+    .my-footer .info article:last-of-type{
+        grid-column-start: span 2;
+        align-items: center;
+    }
+}
