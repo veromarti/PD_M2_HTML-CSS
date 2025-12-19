@@ -35,7 +35,6 @@ h1,h2,h3,h4,h5{
     HEADER / HERO SECTION
 ============================== */
 
-
 .main-header{
     background-color: var(--neutral_light);
 }
@@ -70,6 +69,13 @@ header .my-header{
 
 .my-header nav ul li{
     list-style: none;
+    padding: 5px;
+}
+
+.my-header ul li:hover{
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 button{
@@ -83,6 +89,12 @@ button{
     align-items: center;
     cursor: pointer;
     gap:5px
+}
+
+/* ANIMATION */
+button:hover{
+    scale: 1.1;
+    box-shadow: 0 4px 8px 0 rgba(171, 190, 209, 0.8);
 }
 
 header .hero{
@@ -224,6 +236,13 @@ footer{
 /* ==============================
        SECTION INFO COMPONENT
 ============================== */
+
+/* ANIMATION */
+.info .graph-img:hover {
+    border-radius: 20px;
+    transform: translateY(12px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+}
 
 .info{
     width: 100%;
