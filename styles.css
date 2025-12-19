@@ -1,0 +1,476 @@
+:root {
+--primary: #28CB8B;
+--secondary: #263238;
+--neutral_dark: #263238;
+--neutral_light: #F5F7FA;
+--neutral_white: #FFFF;
+--neutral_Dgrey: #4D4D4D;
+--neutral_grey:#717171;
+--main_text:#18191F;
+--brand_primary:#4CAF4F;
+--secondary-gray:#18191F;
+/* --dark: hsl(210, 10%, 33%);
+--gray: hsl(201, 11%, 66%); */
+--font-main: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main)
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+
+.main-header{
+    background-color: var(--neutral_light);
+}
+
+header .my-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:30px 120px;
+    align-items: center;
+    color: var(--main_text);
+}
+
+.my-header nav{
+    display: flex;
+}
+
+.my-header nav ul{
+    display: flex;
+    gap:50px;
+}
+
+.my-header nav ul li{
+    list-style: none;
+}
+
+button{
+    padding:8px;
+    border: none;
+    border-radius: 6px;
+    background-color:var(--brand_primary);
+    color:var(--neutral_white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap:5px
+}
+
+header .hero{
+    width: 100%;
+    padding: 96px 120px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero .graphic{
+    display: flex;
+    gap: 104px;
+}
+
+.graphic .text{
+    width:70%;
+}
+
+.graphic h1{
+    font-size: 64px;
+    color: var(--neutral_Dgrey);
+}
+
+.graphic span{
+    color: var(--brand_primary);
+}
+
+.graphic p{
+    margin: 16px 0;
+    color: var(--neutral_grey);
+}
+
+.graphic .graph-img{
+    width:30%
+}
+
+.graph-img .illustration{
+    width:100%
+}
+
+.hero img{
+    width:fit-content;
+}
+
+.clients, 
+.community,
+.marketing,
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 120px;
+}
+
+.clients header,
+.community header,
+.marketing header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    margin: 10px;
+    align-items: center;
+}
+
+.clients header h1,
+.community header h1,
+.marketing header h1{
+    font-size: 36px;
+    color: var(--neutral_grey);
+}
+
+.clients header p,
+.community header p,
+.marketing header p{
+    color: var(--secondary-gray);
+}
+
+.clients .logos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.community .groups{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap:5%;
+}
+
+.community .groups .card{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(171, 190, 209, 0.2);
+    text-align: center;
+    border-radius: 8px;
+    gap: 8px;
+    padding: 20px 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h3{
+    font-size: 28px;
+    color:var(--neutral_Dgrey);
+}
+
+.card p{
+    font-size: 14px;
+    color: var(--neutral_grey);
+}
+
+.card img{
+    width: fit-content;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 80px 120px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.info .text h2{
+    font-size: 36px;
+    color: var(--neutral_Dgrey);
+}
+
+.info .text p{
+    color: var(--neutral_grey);
+}
+
+aside {
+    width: 100%;
+    display: flex;
+    padding: 64px 120px;
+    background-color: var(--neutral_light);
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.numbers .text{
+    width:50%;
+}
+
+.numbers  h1{
+    font-size: 64px;
+    color: var(--neutral_Dgrey);
+}
+
+.numbers  span{
+    color: var(--brand_primary);
+}
+
+.numbers  .text p{
+    margin: 16px 0;
+    color: var(--secondary-gray);
+}
+
+.numbers  .counts{
+    width: 50%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.counts .ciphers{
+    width: 50%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.numbers .counts h2{
+    font-size: 28px;
+    color: var(--main_text);
+    width: 100%;
+}
+
+.numbers .counts p{
+    color: var(--neutral_grey);
+    margin: 0;
+    width: 100%;
+}
+
+.ciphers .icon{
+    width:100%
+}
+
+.ciphers img{
+    width:fit-content;
+}
+
+.ciphers .text{
+    width:100%;
+}
+
+.opinion{
+    gap:20px
+}
+
+.opinion .image{
+    border: 1px;
+    border-radius: 10px;
+}
+
+.opinion .text{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.opinion .text h4{
+    font-size: 20px;
+    color: var(--brand_primary);
+}
+
+.opinion .text p{
+    color: var(--neutral_grey);
+}
+
+.text .customers{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.marketing{
+    margin-bottom: 150px;
+}
+
+.marketing .cards{
+    display: flex;
+    width: 100%;
+    gap:20px;
+}
+
+.marketing .cards h5{
+    font-size: 20px;
+    text-align: center;
+    color: var(--neutral_grey);
+}
+
+.marketing .readmore{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.readmore div{
+    position: absolute;
+    background-color: var(--neutral_light);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 8px;
+    gap: 16px;
+    top:70%;
+    box-shadow: 0 4px 8px 0 rgba(171, 190, 209, 0.2);
+}
+
+.readmore div button{
+    background-color: var(--neutral_light);
+    color: var(--brand_primary);
+    gap: 8px;
+}
+
+footer{
+    padding:0
+}
+
+footer .demo{
+    background-color: var(--neutral_light);
+    width: 100%;
+    padding: 32px 120px;
+    gap:32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo h1{
+    font-size: 64px;
+    color: var(--neutral_dark);
+    text-align: center;
+}
+
+footer .my-footer{
+    padding: 32px 120px;
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary);
+    justify-content: space-between;
+    color: var(--neutral_light);
+    font-size: 14px;
+}
+
+.my-footer .company{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.my-footer .company .social{
+    display: flex;
+    flex-direction: row;
+    gap:16px
+}
+
+.company .social button{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--neutral_Dgrey);
+}
+
+.my-footer .info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.my-footer .info h4{
+    font-size: 20px;
+}
+
+.my-footer .info article{
+    display: flex;
+    flex-direction: column;
+    gap:24px
+
+}
+
+.my-footer .info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.my-footer .info ul li{
+    list-style: none;
+}
+
+.email{
+    position: relative;
+}
+
+.email span{
+    position: absolute;
+    display: block;
+    bottom: .5rem;
+    left: 12.8rem;
+    
+}
+
+
+.my-footer input{
+    border-radius: 8px;
+    border: none;
+    background-color: var(--neutral_Dgrey);
+    height: 40px;
+    padding: 10px;
+    color: rgb(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
