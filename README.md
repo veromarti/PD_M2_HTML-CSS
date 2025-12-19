@@ -28,7 +28,9 @@ clipboard-landing-page/ │
 
 ## Author Information
 Full Name: Veronica Martinez Cadavid
+
 Clan: Turing
+
 Email: veromar.c96@gmail.com
 
 ## Resources Used
@@ -38,4 +40,6 @@ MDN Web Docs
 Github
 
 ## Deployment
-This project can be deployed using GitHub Pages using the following link https://github.com/veromarti/PD_M2_HTML-CSS/deployments/github-pages
+This project can be deployed using GitHub Pages using the following link 
+
+https://github.com/veromarti/PD_M2_HTML-CSS/deployments/github-pages](https://veromarti.github.io/PD_M2_HTML-CSS/)
